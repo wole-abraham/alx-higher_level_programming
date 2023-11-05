@@ -5,4 +5,4 @@ if __name__ == "__main__":
     names.sort()
     for name in names:
         if '__' not in name:
-            print(name)
+            print("{}".format(name))
