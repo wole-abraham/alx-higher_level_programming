@@ -30,5 +30,5 @@ if __name__ == "__main__":
 
         with open(filename, encoding="utf-8") as a_file:
             obj = json.loads(a_file.read())
-
+    load_from_json_file("add_item.json")
     save_to_json_file(list1, "add_item.json")
