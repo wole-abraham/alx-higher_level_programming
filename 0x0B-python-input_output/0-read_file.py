@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
-
 """read a file to stdout
 """
+
+
 def read_file(filename=""):
     """python script to open and read a file to stdout
 
@@ -11,4 +11,5 @@ def read_file(filename=""):
     """
 
     with open(filename, encoding="utf-8") as a_file:
-        print("{}".format(a_file.read().rstrip()))
+        for lines in a_file:
+            print("{}".format(lines.rstrip()))
