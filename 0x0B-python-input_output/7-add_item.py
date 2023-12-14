@@ -32,7 +32,11 @@ if __name__ == "__main__":
         with open(filename, encoding="utf-8") as a_file:
             obj = json.loads(a_file.read())
         return obj
-    ab = load_from_json_file("add_item.json")
-    for i in ab:
-        list1.append(i)
-    save_to_json_file(list1, "add_item.json")
+    try:
+        ab = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        save_to_json_file(list1, "add_item.json")
+    else:
+        for i in ab:
+            list1.append(i)
+        save_to_json_file(list1, "add_item.json")
