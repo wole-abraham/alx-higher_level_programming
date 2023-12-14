@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""Summary"""
 if __name__ == "__main__":
-    """Summary"""
 
     import json
     import sys
