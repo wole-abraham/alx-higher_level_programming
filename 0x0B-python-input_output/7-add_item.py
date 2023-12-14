@@ -39,4 +39,5 @@ if __name__ == "__main__":
     else:
         for i in ab:
             list1.append(i)
+        list1.reverse()
         save_to_json_file(list1, "add_item.json")
