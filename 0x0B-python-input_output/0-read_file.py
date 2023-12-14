@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """read a file to stdout
 """
 def read_file(filename=""):
@@ -7,5 +9,6 @@ def read_file(filename=""):
     Args:
         filename (str, optional): _description_. Defaults to "".
     """
+
     with open(filename, encoding="utf-8") as a_file:
-        print(a_file.read())
+        print("{}".format(a_file.read().rstrip()))
