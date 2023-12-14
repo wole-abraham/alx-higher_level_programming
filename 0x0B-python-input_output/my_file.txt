@@ -1,4 +1,1 @@
-well this is a file i'll  be using to test file operations in python 
-i'll be working with the open function and seeing how it works 
-This file is just filed with random text and all that i'll be using 
-python has a built in open function which takes filename as an arguement ac
+hey
