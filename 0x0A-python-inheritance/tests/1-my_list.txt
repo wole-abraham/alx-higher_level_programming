@@ -4,7 +4,7 @@
 ...             print(sorted_list)
 ... 
 >>> my_list = MyList([1, 4, 5, 7, 8])
->>> isinstance(my_list)
+>>> isinstance(my_list, MyList)
 True
 >>> my_list.print_sorted()
 [1, 4, 5, 7, 8]
