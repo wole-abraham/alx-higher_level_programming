@@ -149,5 +149,5 @@ class Rectangle(Base):
                     self.__height = kwargs['height']
                     self.__x = kwargs['x']
                     self.__y = kwargs['y']
-                except IndexError:
+                except KeyError:
                     pass
