@@ -3,6 +3,8 @@
 
 from models.base import Base
 
+import sys
+
 
 class Rectangle(Base):
     """Rectangel class inherits from base class"""
@@ -119,7 +121,7 @@ class Rectangle(Base):
         while(i < self.__height):
             while(j < self.__width):
                 j += 1
-                print("#", end='')
+                print("#", file=sys.stdout, end='')
             print("")
             j = 0
             i += 1
