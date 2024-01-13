@@ -145,9 +145,21 @@ class Rectangle(Base):
             if kwargs:
                 try:
                     self.id = kwargs['id']
+                except KeyError:
+                    pass
+                try:
                     self.__width = kwargs['width']
+                except KeyError:
+                    pass
+                try:
                     self.__height = kwargs['height']
+                except KeyError:
+                    pass
+                try:
                     self.__x = kwargs['x']
+                except KeyError:
+                    pass
+                try:
                     self.__y = kwargs['y']
                 except KeyError:
                     pass
