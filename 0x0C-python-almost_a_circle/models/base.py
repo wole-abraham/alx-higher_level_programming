@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Base model"""
+"""This base will be the base of all other classes in this project"""
 
 
 class Base():
