@@ -3,7 +3,7 @@
 
 
 class Base():
-    """Base"""
+    """Base his base will be the base of all other classes in this project"""
 
     __nb_objects = 0
 
