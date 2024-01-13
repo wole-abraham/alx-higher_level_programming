@@ -33,7 +33,7 @@ class Rectangle(Base):
 
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
-        if x < 0:
+        if y < 0:
             raise ValueError("y must be >= 0")
         else:
             self.__y = y
