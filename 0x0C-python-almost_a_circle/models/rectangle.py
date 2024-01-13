@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Rectangle"""
+"""This base will be the base of all other classes in this project"""
 
 from base import Base
 
