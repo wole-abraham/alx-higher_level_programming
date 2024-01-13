@@ -110,3 +110,16 @@ class Rectangle(Base):
         """Returns the area of the Rectangle"""
 
         return self.__height * self.__width
+
+    def display(self):
+        """Displays the triangle in with # """
+
+        i = 0
+        j = 0
+        while(i < self.__height):
+            while(j < self.__width):
+                j += 1
+                print("#", end='')
+            print("")
+            j = 0
+            i += 1
