@@ -70,6 +70,7 @@ class Base():
             file_content = a.read()
             loads = cls.from_json_string(file_content)
             list_int = [cls.create(**i) for i in loads]
+            a.close()
         except FileNotFoundError:
             list_int = []
 
