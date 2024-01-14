@@ -137,7 +137,8 @@ class Rectangle(Base):
 
         """
         return {'x': getattr(self, "x"), 'y': getattr(self, "y"),
-                "id": getattr(self, "id")}
+                "id": getattr(self, "id"), "width": getattr(self, "width"),
+                "height": getattr(self, "height")}
 
     def update(self, *args, **kwargs):
         """updates attributes"""
