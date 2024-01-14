@@ -42,3 +42,13 @@ class Base():
                 objs_dic = [x.to_dictionary() for x in list_objs]
                 objs_dic = cls.to_json_string(objs_dic)
                 file.write(objs_dic)
+
+    def from_json_string(json_string):
+        """
+         Returns the list of the json string
+         representation
+        """
+
+        if json_string is None:
+            return []
+        return json.loads(json_string)
