@@ -36,7 +36,7 @@ class Base():
 
         """
         with open("Rectangle.json", mode='w', encoding="utf-8") as file:
-            if list_objs:
+            if list_objs is not None:
                 convert = cls.to_json_string(list_objs)
                 file.write(json.dumps(convert))
             else:
