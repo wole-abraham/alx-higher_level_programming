@@ -31,3 +31,17 @@ class Square(Rectangle):
         else:
             self.width = value
             self.height = value
+
+    def update(self, *args, **kwargs):
+        if args:
+            try:
+                self.id = args[0]
+                self.size = args[1]
+                self.x = args[2]
+                self.y = args[3]
+
+            except IndexError:
+                pass
+        if len(args) == 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
