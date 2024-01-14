@@ -52,3 +52,13 @@ class Base():
         if json_string is None:
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        creates an instance withh all attr from **kwargs
+        and returns the instance
+        """
+        dummy = cls(0 , 0, 0, 0)
+        dummy.update(dictionary)
+        return dummy
