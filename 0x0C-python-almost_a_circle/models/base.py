@@ -35,7 +35,7 @@ class Base():
         save the json str representation of list_obj to file
 
         """
-        with open("Rectangle.json", mode='w', encoding="utf-8") as file:
+        with open(f"{cls.__name__}.json", mode='w', encoding="utf-8") as file:
             if list_objs is None:
                 file.write(json.dumps([]))
             else:
