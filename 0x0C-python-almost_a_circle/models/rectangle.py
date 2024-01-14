@@ -130,6 +130,16 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -\
  {self.__width}/{self.__height}"
 
+    def to_dictionary(self):
+        """
+            Return the dictionary representation of the instance
+            x, y, width, height and id
+
+        """
+        return {'x': getattr(self, "x"), 'y': getattr(self, "y"),
+                "id": getattr(self, "id"), "width": getattr(self, "width"),
+                "height": getattr(self, "height")}
+
     def update(self, *args, **kwargs):
         """updates attributes"""
         if args:
