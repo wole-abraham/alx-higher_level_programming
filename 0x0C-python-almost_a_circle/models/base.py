@@ -59,9 +59,6 @@ class Base():
         creates an instance withh all attr from **kwargs
         and returns the instance
         """
-        if "size" in dictionary.keys():
-            dummy = cls(5)
-        else:
-            dummy = cls(5, 6)
-            dummy.update(**dictionary)
+        dummy = cls(5, 0)
+        dummy.update(**dictionary)
         return dummy
