@@ -59,6 +59,6 @@ class Base():
         creates an instance withh all attr from **kwargs
         and returns the instance
         """
-        dummy = cls(5, 0)
+        dummy = cls(5, 1)
         dummy.update(**dictionary)
         return dummy
