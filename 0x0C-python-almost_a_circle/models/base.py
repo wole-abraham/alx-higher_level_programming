@@ -61,4 +61,4 @@ class Base():
         """
         dummy = cls(0, 0, 0, 0)
         dummy.update(dictionary)
-        return dummy
+        return dummy()
