@@ -47,6 +47,7 @@ class Square(Rectangle):
         if len(args) == 0:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
     def to_dictionary(self):
         """
             Return the dictionary representation of the instance
@@ -54,4 +55,4 @@ class Square(Rectangle):
 
         """
         return {'x': getattr(self, "x"), 'y': getattr(self, "y"),
-                "id": getattr(self, "id")}
+                "id": getattr(self, "id"), "size": getattr(self.size)}
