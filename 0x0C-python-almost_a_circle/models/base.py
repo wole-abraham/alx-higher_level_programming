@@ -3,6 +3,7 @@
 
 import json
 
+
 class Base():
     """Base his base will be the base of all other classes in this project"""
 
@@ -21,9 +22,8 @@ class Base():
         for list of dictionaries
         """
 
+        if list_dictionaries is None:
+            return "[]"
+
         json_dic = json.dumps(list_dictionaries)
-
         return json_dic
-
-
-
