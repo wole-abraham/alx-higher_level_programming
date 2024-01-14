@@ -66,10 +66,10 @@ class Base():
     @classmethod
     def load_from_file(cls):
         try:
-            with open(f"{cls.__name__}.json", mode='r', encoding='utf-8') as file:
-                file_content = file.read()
-                loads = cls.from_json_string(file_content)
-                list_int = [cls.create(**i) for i in loads]
+            a = open(f"{cls.__name__}.json")
+            file_content = a.read()
+            loads = cls.from_json_string(file_content)
+            list_int = [cls.create(**i) for i in loads]
         except FileNotFoundError:
             list_int = []
 
