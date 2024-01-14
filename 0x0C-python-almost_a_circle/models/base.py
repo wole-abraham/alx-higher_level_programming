@@ -40,4 +40,5 @@ class Base():
                 file.write(json.dumps([]))
             else:
                 objs_dic = [x.to_dictionary() for x in list_objs ]
-                file.write(json.dumps(objs_dic))
+                objs_dic = cls.to_json_string(objs_dic)
+                file.write(objs_dic)
