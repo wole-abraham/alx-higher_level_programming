@@ -36,5 +36,8 @@ class Base():
 
         """
         with open("Rectangle.json", mode='w', encoding="utf-8") as file:
-            convert = cls.to_json_string(list_objs)
-            file.write(json.dumps(convert))
+            if list_objs:
+                convert = cls.to_json_string(list_objs)
+                file.write(json.dumps(convert))
+            else:
+                file.write(json.dumps([]))
