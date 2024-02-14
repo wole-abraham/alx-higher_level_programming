@@ -10,7 +10,7 @@ else{
 	for (let n = 0; n < size; n++){
 		let x = "";
 		for (let i = 0; i < size; i++){
-			x += "x";
+			x += "X";
 		}
 		console.log(x);
 	}
