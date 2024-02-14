@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const computeFactorial = (n) => {
+function computeFactorial(n){
   if (isNaN(parseInt(n))) {
     return 1; // Factorial of NaN is 1
   } else if (n <= 1) {
