@@ -3,8 +3,10 @@
 const argv = process.argv;
 let length = 0;
 for (const _ of argv) {
-  length = _ - 2;
+  length++;
 }
+length--;
+length--;
 if (length === 0) {
   console.log('No argument');
 } else {
