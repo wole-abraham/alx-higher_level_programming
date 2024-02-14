@@ -12,7 +12,7 @@ for (let i = 0; i < process.argv.length; i++) {
   }
 }
 
-if (process.argv.length - 2 === 0) {
+if (process.argv.length - 2 === 0 || process.argv.length - 2 === 1) {
   console.log(0);
 } else {
   console.log(argv[1]);
