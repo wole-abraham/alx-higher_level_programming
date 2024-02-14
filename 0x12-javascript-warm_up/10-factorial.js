@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function computeFactorial(n){
+function computeFactorial (n) {
   if (isNaN(parseInt(n))) {
     return 1; // Factorial of NaN is 1
   } else if (n <= 1) {
@@ -8,7 +8,7 @@ function computeFactorial(n){
   } else {
     return n * computeFactorial(n - 1); // Recursive case: multiply n by factorial of (n - 1)
   }
-};
+}
 
 const input = parseInt(process.argv[2]);
 console.log(computeFactorial(input));
