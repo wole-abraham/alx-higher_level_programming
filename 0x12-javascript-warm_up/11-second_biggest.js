@@ -12,10 +12,8 @@ for (let i = 0; i < process.argv.length; i++) {
   }
 }
 
-if (process.argv.length -2 === 0){
-	console.log(0);
-}
-
-else{
-	console.log(argv[1]);
+if (process.argv.length - 2 === 0) {
+  console.log(0);
+} else {
+  console.log(argv[1]);
 }
