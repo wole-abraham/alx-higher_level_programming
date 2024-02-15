@@ -12,7 +12,7 @@ class Square extends Squares {
     for (let i = 0; i < this.height; i++) {
       let x = '';
       for (let j = 0; j < this.width; j++) {
-        if (c === undefined || c != 'C') {
+        if (c === undefined || c !== 'C') {
           x += 'X';
         } else {
           x += 'C';
