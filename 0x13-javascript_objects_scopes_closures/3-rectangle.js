@@ -20,5 +20,4 @@ class Rectangle {
   }
 }
 
-const Rec = new Rectangle(2, 3);
-Rec.print();
+module.exports = Rectangle;
