@@ -1,1 +1,1 @@
-0x10-python-netwok
+# Solutions to tasks on Python - Network #0
