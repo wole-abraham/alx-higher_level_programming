@@ -3,8 +3,11 @@
 
 """Python to get x-request-id value from header file """
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     import sys
-    import urllib
+    import urllib.request as urll
+
+    with urll.urlopen(sys.argv[1]) as req:
+        print(req.headers['X-Request-Id'])
 
 
