@@ -2,7 +2,7 @@
 #Python script fetches response from https://alx-intranet.hbtn.io/status
 """url fetcher"""
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     pass
 else:
     import urllib.request as url
