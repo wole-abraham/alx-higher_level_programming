@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#gets response header value
+# gets response header value
 
 """Python to get x-request-id value from header file """
 
@@ -9,5 +9,3 @@ if __name__ == '__main__':
 
     with urll.urlopen(sys.argv[1]) as req:
         print(req.headers['X-Request-Id'])
-
-
