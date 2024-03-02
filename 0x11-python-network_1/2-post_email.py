@@ -14,9 +14,3 @@ if __name__ == '__main__':
     with urllib.request.urlopen(req) as file:
         this = file.read()
         print(this)
-
-
-
-
-
-
