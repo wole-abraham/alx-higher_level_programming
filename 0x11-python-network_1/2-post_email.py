@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # sends a post request
 
+""" sends a post request """
+
 import sys
 import urllib.parse
 import urllib.request
