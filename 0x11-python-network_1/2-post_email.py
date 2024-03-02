@@ -6,8 +6,7 @@ if __name__ == '__main__':
     import sys
 
     url = sys.argv[1]
-    email = f'email={sys.argv[2]}'
-    data = email.encode('ascii')
+    email = f'email={sys.argv[2]}'.encode('utf-8')
     req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as file:
         this = file.read()
