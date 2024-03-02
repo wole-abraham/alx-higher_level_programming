@@ -12,7 +12,7 @@ if __name__ == '__main__':
     data = data.encode('ascii')
     req = urllib.request.Request(url, data)
     with urllib.request.urlopen(req) as file:
-        this = file.decode('utf-8')
+        this = file.read()
         print(this)
 
 
