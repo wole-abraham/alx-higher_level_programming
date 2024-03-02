@@ -14,5 +14,8 @@ if __name__ == "__main__":
             data = file.read().decode('utf-8')
             print(data)
 
-    except urllib.error.HTTPError as e:
-        print(f"Error code: {e.code}")
+    except (urllib.error.HTTPError, urllib.error.URLErorr) as e:
+        if hasattr(e, 'code'):
+            print(f"Error code: {e.code}")
+        elif hasattr(e, 'reason'):
+            print(f"Error code: {e.reason}")
