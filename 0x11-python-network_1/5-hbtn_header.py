@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 # Python script that takes in a URL, returns the value of the header
 
-"""
-    python script
-
-"""
+""" python script """
 
 import sys
 import requests
