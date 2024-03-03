@@ -16,7 +16,3 @@ if __name__ == "__main__":
 
     except (urllib.error.HTTPError) as e:
         print(f"Error code: {e.code}")
-    except (urllib.error.URLError) as e:
-        print(e.reason)
-
-
