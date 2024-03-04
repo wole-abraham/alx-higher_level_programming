@@ -16,7 +16,7 @@ if __name__ == '__main__':
     if isinstance(r.json(), dict) and len(r.json()) != 0:
         dic = r.json()
         print(f"[{dic['id']}] {dic['name']}")
-    elif not isinstance(r.json(), dict):
+    elif not eval(r.json()):
         print("Not a valid JSON")
     else:
         print("No result")
