@@ -10,11 +10,13 @@ if __name__ == '__main__':
     url = 'http://0.0.0.0:5000/search_user'
     if len(sys.argv) == 2:
         query = {'q': sys.argv[1]}
-        r = requests.post(url, query)
-        if isinstance(r.json(), dict) and len(r.json()) != 0:
-            dic = r.json()
-            print(f"[{dic['id']}] {dic['name']}")
-        else:
-            print("Not a valid JSON")
+    elif len(sys.argv) == 1:
+        query = {'q': ""}
+    r = requests.post(url, query)
+    if isinstance(r.json(), dict) and len(r.json()) != 0:
+        dic = r.json()
+        print(f"[{dic['id']}] {dic['name']}")
+    elif not isinstance(r.json(), dict):
+        print("Not a valid JSON")
     else:
         print("No result")
