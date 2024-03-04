@@ -15,6 +15,6 @@ if __name__ == '__main__':
             dic = r.json()
             print(f"[{dic['id']}] {dic['name']}")
         else:
-            print("No result")
+            print("Not a valid JSON")
     else:
         print("No result")
