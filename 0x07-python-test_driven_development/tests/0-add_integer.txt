@@ -11,4 +11,4 @@
     Traceback (most recent call last):
     TypeError: add_integer() missing 1 required positional argument: 'a'
     >>> res(1)
-    >>> 99
+    99
