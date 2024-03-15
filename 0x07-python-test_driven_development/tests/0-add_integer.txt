@@ -17,3 +17,7 @@
     ValueError: cannot convert float NaN to integer
     >>> res(1.0)
     99
+    >>> res(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
