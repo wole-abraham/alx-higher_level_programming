@@ -12,3 +12,8 @@
     TypeError: add_integer() missing 1 required positional argument: 'a'
     >>> res(1)
     99
+    >>> res(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+    >>> res(1.0)
+    99
