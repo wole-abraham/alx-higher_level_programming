@@ -18,6 +18,8 @@
     >>> res(matrix_b, 0)
     Traceback (most recent call last):
     ZeroDivisionError: division by zero
+    >>> res(matrix_a, float('inf'))
+    [[0.0, 0.0, 0.0], [0.0, 0.0]]
     >>> res(2, 2)
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
