@@ -2,7 +2,10 @@
 
 """ Python function that divides all element of a matirx"""
 
+
 def matrix_divided(matrix, div):
+    """ divides each value in the matrix by div and retuns new matrix """
+
     error = "matrix must be a matrix (list of lists) of integers/floats"
     if not isinstance(matrix, list):
         raise TypeError(error)
@@ -20,10 +23,10 @@ def matrix_divided(matrix, div):
     for i in matrix:
         if len(i) != len_of_first:
             raise TypeError("Each row of the matrix must have the same size")
-    
+
     sum = []
     for i in matrix:
         mul = [round(x/div, 2) for x in i]
         sum.append(mul)
-    
+
     return sum
