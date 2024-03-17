@@ -20,4 +20,4 @@
     ZeroDivisionError: division by zero
     >>> res(2, 2)
     Traceback (most recent call last):
-    TypeError: matrix must be a matrix(list of lists) of integers/floats
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
