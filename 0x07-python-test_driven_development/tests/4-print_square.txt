@@ -1,0 +1,18 @@
+>>> res = __import__("4-print_square").print_square
+>>> res(4)
+####
+####
+####
+####
+>>> res("a")
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> res(0.4)
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> res(-1)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+>>> res(float('inf'))
+Traceback (most recent call last):
+TypeError: size must be an integer
