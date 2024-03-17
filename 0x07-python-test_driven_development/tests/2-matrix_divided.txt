@@ -17,7 +17,7 @@
     TypeError: div must be a number
     >>> res(matrix_b, 0)
     Traceback (most recent call last):
-    ZeroDivisionErrror: division by zero
+    ZeroDivisionError: division by zero
     >>> res(2, 2)
     Traceback (most recent call last):
     TypeError: matrix must be a matrix(list of lists) of integers/floats
