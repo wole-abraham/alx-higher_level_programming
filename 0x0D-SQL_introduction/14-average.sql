@@ -1,0 +1,3 @@
+-- CMOPUTES THE AVERAGE OF ALL RECORDS IN THE TABLE
+SELECT AVG(score) AS average FROM second_table;
+
