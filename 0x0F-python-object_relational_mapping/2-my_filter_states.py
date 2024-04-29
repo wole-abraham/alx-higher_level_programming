@@ -7,7 +7,6 @@ if __name__ == "__main__":
     import sys
     import MySQLdb
 
-
     arg = sys.argv[1:]
     host = 'localhost'
     user = arg[0]
@@ -15,13 +14,14 @@ if __name__ == "__main__":
     db = arg[2]
     name = arg[3]
     port = 3306
-    
-    db = MySQLdb.connect(host=host, user=user,
-                     passwd=passwd, db=db,
-                     port=port)
-    cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(name))
+    db = MySQLdb.connect(host=host, user=user,
+                         passwd=passwd, db=db,
+                         port=port)
+    cur = db.cursor()
+    query = "SELECT * FROM states WHERE name = '{}'\
+            ORDER BY id ASC".format(name)
+    cur.execute(query)
 
     states = cur.fetchall()
 
