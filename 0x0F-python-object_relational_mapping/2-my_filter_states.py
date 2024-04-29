@@ -5,7 +5,6 @@
 import sys
 import MySQLdb
 
-
 arg = sys.argv[1:]
 host = 'localhost'
 user = arg[0]
@@ -19,7 +18,7 @@ db = MySQLdb.connect(host=host, user=user,
                      port=port)
 cur = db.cursor()
 
-cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id".format(name))
+cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(name))
 
 states = cur.fetchall()
 
