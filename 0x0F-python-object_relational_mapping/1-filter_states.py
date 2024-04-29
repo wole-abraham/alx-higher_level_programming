@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" python sript to list all states from the table"""
+""" python sript to list all states from the table """
 
 import sys
 import MySQLdb
@@ -16,7 +16,7 @@ if __name__ == '__main__':
                          port=port)
     cur = db.cursor()
     cur.execute("SELECT id, name FROM states WHERE name LIKE\
-                'N%' ORDER BY id ASC")
+'N%' ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
         print(row)
