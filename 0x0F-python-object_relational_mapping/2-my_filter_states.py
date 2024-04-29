@@ -19,7 +19,7 @@ if __name__ == "__main__":
                          passwd=passwd, db=db,
                          port=port)
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = '{}'\
+    query = f"SELECT * FROM states WHERE name = '{}'\
             ORDER BY id ASC".format(name)
     cur.execute(query)
 
