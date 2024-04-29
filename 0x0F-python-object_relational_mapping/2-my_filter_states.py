@@ -2,25 +2,28 @@
 
 """ python script dislays all values in the states table """
 
-import sys
-import MySQLdb
+if __name__ == "__main__":
 
-arg = sys.argv[1:]
-host = 'localhost'
-user = arg[0]
-passwd = arg[1]
-db = arg[2]
-name = arg[3]
-port = 3306
+    import sys
+    import MySQLdb
 
-db = MySQLdb.connect(host=host, user=user,
+
+    arg = sys.argv[1:]
+    host = 'localhost'
+    user = arg[0]
+    passwd = arg[1]
+    db = arg[2]
+    name = arg[3]
+    port = 3306
+    
+    db = MySQLdb.connect(host=host, user=user,
                      passwd=passwd, db=db,
                      port=port)
-cur = db.cursor()
+    cur = db.cursor()
 
-cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(name))
+    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(name))
 
-states = cur.fetchall()
+    states = cur.fetchall()
 
-for state in states:
-    print(state)
+    for state in states:
+        print(state)
