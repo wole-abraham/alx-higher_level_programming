@@ -11,4 +11,4 @@ if __name__ == "__main__":
     arg = sys.argv
 
     with urllib.request.urlopen(arg[1]) as file:
-        print(file.headers['X-request-Id'])
+        print(file.headers.get('X-request-Id'))
