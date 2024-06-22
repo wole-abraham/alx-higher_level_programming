@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" Python script to execute query """
+""" Python script to execute query the query below """
 
 import MySQLdb
 import sys
