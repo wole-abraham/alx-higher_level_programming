@@ -23,7 +23,8 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     query = "SELECT cities.name FROM cities WHERE\
-            state_id = (SELECT id FROM states WHERE name = %s)"
+            state_id = (SELECT id FROM states WHERE name = %s)\
+            ORDER BY cities.id ASC"
     cur.execute(query, (state_name,))
 
     rows = cur.fetchall()
