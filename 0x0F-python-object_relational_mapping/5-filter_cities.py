@@ -34,4 +34,4 @@ if __name__ == "__main__":
         for r in i:
             em.append(r)
 
-print(*em, sep=', ')
+    print(*em, sep=', ')
