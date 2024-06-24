@@ -23,7 +23,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    i = session.query(State).filter(State.name.like('%a%')).order_by(State.id.asc())
+    i = session.query(State).filter(State.name.like('\
+%a%')).order_by(State.id.asc())
     for inn in i:
         if inn:
             print(f'{inn.id}: {inn.name}')
