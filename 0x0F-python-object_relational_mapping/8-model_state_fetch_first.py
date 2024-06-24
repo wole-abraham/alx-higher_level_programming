@@ -1,7 +1,8 @@
 #!/usr/bin/pytho3
 
 """
-    pyhton script o qurty
+    pyhton script that print
+    the query values:
 
 """
 
