@@ -26,7 +26,7 @@ def list_objects():
     db_name = argv[3]
 
     engine = create_engine(f'mysql+mysqldb://{username}:\
-            {password}@localhost:3306/{db_name}')
+{password}@localhost:3306/{db_name}')
     Session = sessionmaker(bind=engine)
     session = Session()
 
