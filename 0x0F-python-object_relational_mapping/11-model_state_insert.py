@@ -26,5 +26,5 @@ if __name__ == "__main__":
     session.add(obj)
     session.commit()
 
-    for i in session.query(State):
-        print(f"{i.id}: {i.name}")
+    i = session.query(State).count()
+    print(i)
