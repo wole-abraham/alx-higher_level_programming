@@ -23,5 +23,5 @@ if __name__ == "__main__":
     session = Session()
     i = session.query(State).filter(State.name.like('%a%'))
     for name in i:
-        session.delete(i)
+        session.delete(name)
     session.commit()
