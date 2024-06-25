@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 """
-    python script that print the State Object wit the name passd argument from
+    python script that print the states
+    of the object
     the database in the system
-
 """
 if __name__ == "__main__":
 
