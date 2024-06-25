@@ -21,9 +21,6 @@ if __name__ == "__main__":
 {password}@localhost:3306/{db_name}')
     Session = sessionmaker(bind=engine)
     session = Session()
-
-    obj = State(name='Louisiana')
-    session.add(obj)
     i = session.query(State).filter_by(id=2).first()
     i.name = 'New Mexico'
     session.commit()
