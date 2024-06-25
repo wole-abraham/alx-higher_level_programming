@@ -25,3 +25,6 @@ if __name__ == "__main__":
     obj = State(name='Louisiana')
     session.add(obj)
     session.commit()
+
+    for i in session.query(State):
+        print(f"{i.id}: {i.name}")
