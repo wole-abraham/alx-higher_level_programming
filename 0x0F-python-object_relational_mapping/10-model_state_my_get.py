@@ -22,5 +22,8 @@ engine = create_engine(f'mysql+mysqldb://{username}:\
 Session = sessionmaker(bind=engine)
 session = Session()
 
-for state in session.query(State).filter_by(name=state_name):
-    print(state.id)
+i = session.query(State).filter_by(name=state_name).first()
+if i:
+    print(i.id)
+else:
+    print("Not found")
