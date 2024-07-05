@@ -16,4 +16,4 @@ data = data.encode('ascii')
 req = urllib.request.Reqest(argv[1], data)
 
 with urllib.request.urlopen(req) as file:
-    print(file.read())
+    print(file.read().decode('utf-8'))
