@@ -10,7 +10,8 @@ from sys import argv
 import urllib.request
 import urllib.parse
 
-value = {'email': argv[2]}
+email = argv[2]
+value = {'email': email}
 data = urllib.parse.urlencode(value)
 data = data.encode('ascii')
 req = urllib.request.Reqest(argv[1], data)
