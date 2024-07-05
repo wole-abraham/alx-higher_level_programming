@@ -12,6 +12,4 @@ import urllib.request
 from sys import argv
 
 with urllib.request.urlopen(argv[1]) as response:
-    res = response
-
-print(res.headers['X-Request-Id'])
+    print(response.headers['X-Request-Id'])
