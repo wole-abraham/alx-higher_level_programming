@@ -10,11 +10,13 @@ from sys import argv
 import urllib.request
 import urllib.parse
 
-email = argv[2]
-value = {'email': email}
-data = urllib.parse.urlencode(value)
-data = data.encode('ascii')
-req = urllib.request.Reqest(argv[1], data)
+if __name__ = "__main__":
 
-with urllib.request.urlopen(req) as file:
-    print(file.read().decode('utf-8'))
+    email = argv[2]
+    value = {'email': email}
+    data = urllib.parse.urlencode(value)
+    data = data.encode('ascii')
+    req = urllib.request.Reqest(argv[1], data)
+
+    with urllib.request.urlopen(req) as file:
+        print(file.read().decode('utf-8'))
