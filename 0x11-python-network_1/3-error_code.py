@@ -9,7 +9,6 @@ if __name__ == "__main__":
 
     from sys import argv
     import urllib.request
-    import urllib.parse
 
     url = argv[1]
 
