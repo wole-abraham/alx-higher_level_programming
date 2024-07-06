@@ -17,7 +17,7 @@ if __name__ == "__main__":
         with urllib.request.urlopen(url) as file:
             res = file
 
-    except urllib.error.URLError as e:
+    except urllib.error.HTTPError as e:
         print(f"Error code: {e.code}")
     else:
         print(res.read().decode())
